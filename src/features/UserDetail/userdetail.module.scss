@@ -1,0 +1,81 @@
+.user-detail-container {
+  display: flex;
+  padding: 50px 0 50px;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh !important;
+  max-height: 100vh !important;
+
+  .card-container {
+    width: 50%;
+    height: 300px;
+
+    .card-first-half {
+      padding: 3.5rem;
+      background-color: #d8d8d8;
+      position: relative;
+
+      .card-view-request {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        position: absolute;
+        bottom: -2.5rem;
+        right: 2.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: bold;
+        word-wrap: break-word;
+
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .profile-image {
+        position: absolute;
+        bottom: -2.5rem;
+        left: 2.5rem;
+
+        img {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+      }
+    }
+    .card-second-half {
+      padding: 3.5rem;
+      background-color: white;
+
+      div {
+        background-color: #d8d8d8;
+        width: 70%;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .generic-pill {
+    margin-top: 1rem;
+
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 50%;
+
+    p {
+      margin: 0;
+
+      &:first-child {
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
